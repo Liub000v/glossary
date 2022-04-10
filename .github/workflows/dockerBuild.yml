@@ -18,4 +18,4 @@ jobs:
         docker build -t itmo/web-glossary .
     - name: docker push
       run: |
-        docker push liub000v/itmo:glossary
+        docker push liub000v/itmo:web-glossary
