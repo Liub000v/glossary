@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: enter docker
+    - name: log docker
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}   
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}  
