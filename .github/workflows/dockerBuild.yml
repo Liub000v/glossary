@@ -16,6 +16,9 @@ jobs:
     - name: docker build
       run: |
         docker build -t itmo/web-glossary .
+    - name: docker tag
+      run: |
+        docker tag itmo/web-glossary:latest liub000v/itmo:glossary
     - name: docker push
       run: |
-        docker push itmo/web-glossary:latest
+        docker push liub000v/itmo:glossary
